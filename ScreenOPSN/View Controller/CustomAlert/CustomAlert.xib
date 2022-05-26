@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIText-Bold.ttf">
+            <string>SFUIText-Bold</string>
+        </array>
+        <array key="SFUIText-Medium.ttf">
+            <string>SFUIText-Medium</string>
+        </array>
+        <array key="SFUIText-Regular.ttf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomAlert" customModule="ScreenOPSN" customModuleProvider="target">
+            <connections>
+                <outlet property="labelAlertMsg" destination="gog-tk-YIi" id="2Ig-OU-Pat"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90a-Uk-TAj" customClass="UIViewPropertys" customModule="ScreenOPSN" customModuleProvider="target">
+                    <rect key="frame" x="48" y="349.5" width="318" height="197"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LiVEwirz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juW-R8-LDz">
+                            <rect key="frame" x="10" y="60" width="298" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="LyI-nI-Fzq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="20"/>
+                            <color key="textColor" red="0.023529411760000001" green="0.42745098040000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alert Msg" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gog-tk-YIi">
+                            <rect key="frame" x="10" y="104" width="298" height="18"/>
+                            <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="15"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHb-QJ-KlC" customClass="UIButtonProperts" customModule="ScreenOPSN" customModuleProvider="target">
+                            <rect key="frame" x="49" y="157" width="220" height="30"/>
+                            <color key="backgroundColor" red="0.02207797207" green="0.42765092850000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="CNA-5t-Fbk"/>
+                                <constraint firstAttribute="width" constant="220" id="gIU-Ob-wA9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="15"/>
+                            <state key="normal" title="OK">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="dismissAlert:" destination="-1" eventType="touchUpInside" id="xFi-h9-0mq"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="juW-R8-LDz" firstAttribute="leading" secondItem="90a-Uk-TAj" secondAttribute="leading" constant="10" id="2Zk-mD-lWj"/>
+                        <constraint firstAttribute="trailing" secondItem="juW-R8-LDz" secondAttribute="trailing" constant="10" id="Aav-oW-3v2"/>
+                        <constraint firstItem="gog-tk-YIi" firstAttribute="top" secondItem="juW-R8-LDz" secondAttribute="bottom" constant="20" id="Acb-hR-Ben"/>
+                        <constraint firstItem="WHb-QJ-KlC" firstAttribute="top" secondItem="gog-tk-YIi" secondAttribute="bottom" constant="35" id="GFy-Ga-tdv"/>
+                        <constraint firstItem="WHb-QJ-KlC" firstAttribute="centerX" secondItem="90a-Uk-TAj" secondAttribute="centerX" id="LKP-YE-WFN"/>
+                        <constraint firstAttribute="bottom" secondItem="WHb-QJ-KlC" secondAttribute="bottom" constant="10" id="OEM-C3-Nob"/>
+                        <constraint firstItem="gog-tk-YIi" firstAttribute="trailing" secondItem="juW-R8-LDz" secondAttribute="trailing" id="aIA-Af-h8v"/>
+                        <constraint firstAttribute="width" constant="318" id="ivr-Bw-X4B"/>
+                        <constraint firstItem="juW-R8-LDz" firstAttribute="top" secondItem="90a-Uk-TAj" secondAttribute="top" constant="60" id="r1V-w6-3tU"/>
+                        <constraint firstItem="gog-tk-YIi" firstAttribute="leading" secondItem="juW-R8-LDz" secondAttribute="leading" id="yXQ-pD-qJT"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGA-4S-o0Y" customClass="UIViewPropertys" customModule="ScreenOPSN" customModuleProvider="target">
+                    <rect key="frame" x="167" y="304.5" width="80" height="80"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgpsh_fullsize_anim" translatesAutoresizingMaskIntoConstraints="NO" id="zIi-sL-p31" customClass="UIImageViewProperty" customModule="ScreenOPSN" customModuleProvider="target">
+                            <rect key="frame" x="10" y="1" width="60" height="69"/>
+                            <color key="backgroundColor" red="0.111701943" green="0.53675413130000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.111701943" green="0.53675413130000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="NtP-gC-rfC"/>
+                        <constraint firstItem="zIi-sL-p31" firstAttribute="leading" secondItem="GGA-4S-o0Y" secondAttribute="leading" constant="10" id="cuq-PF-r48"/>
+                        <constraint firstAttribute="bottom" secondItem="zIi-sL-p31" secondAttribute="bottom" constant="10" id="e9Q-Kx-pcb"/>
+                        <constraint firstAttribute="width" constant="80" id="lKo-ZA-kN3"/>
+                        <constraint firstItem="zIi-sL-p31" firstAttribute="top" secondItem="GGA-4S-o0Y" secondAttribute="top" constant="1" id="rrW-aV-VVv"/>
+                        <constraint firstAttribute="trailing" secondItem="zIi-sL-p31" secondAttribute="trailing" constant="10" id="xmC-eB-cry"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="90a-Uk-TAj" firstAttribute="top" secondItem="GGA-4S-o0Y" secondAttribute="bottom" constant="-35" id="Adv-Du-6z3"/>
+                <constraint firstItem="90a-Uk-TAj" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="VHE-Zc-NVE"/>
+                <constraint firstItem="GGA-4S-o0Y" firstAttribute="centerX" secondItem="90a-Uk-TAj" secondAttribute="centerX" id="Wub-Qa-1Y7"/>
+                <constraint firstItem="90a-Uk-TAj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dL5-Qu-bgP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="29" y="172"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imgpsh_fullsize_anim" width="640" height="480"/>
+    </resources>
+</document>
